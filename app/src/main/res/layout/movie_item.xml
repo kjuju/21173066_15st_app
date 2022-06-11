@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:cardBackgroundColor="#FFFFFFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/movie"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/movieName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="영화제목"
+                    android:textColor="#8258FA"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/movierank"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:gravity="left"
+                    android:paddingRight="10dp"
+                    android:text="순위"
+                    android:textColor="#DF0101"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/movieshowCut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="상영횟수"
+                    android:textColor="#2E64FE"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/moviernum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="번호"
+                    android:textColor="#2E64FE"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/peopleCount"
+                    android:layout_width="118dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:gravity="left"
+                    android:paddingRight="10dp"
+                    android:text="관객수"
+                    android:textColor="#1C1C1C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/openDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-60dp"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="개봉일"
+                    android:textColor="#2E64FE"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
